@@ -8,8 +8,8 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/absolutelightning/safeio"
 	"github.com/mitchellh/cli"
-	"github.com/rboyer/safeio"
 
 	"github.com/hashicorp/consul/api"
 	"github.com/hashicorp/consul/command/flags"
