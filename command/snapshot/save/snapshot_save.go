@@ -75,7 +75,7 @@ func (c *cmd) Run(args []string) int {
 
 	// Save the file first.
 	unverifiedFile := file + ".unverified"
-	if _, err := safeio.WriteToFile(snap, unverifiedFile, 0600); err != nil {
+	if _, err := safeio.WriteToFile(snap, unverifiedFile, 0660); err != nil {
 		c.UI.Error(fmt.Sprintf("Error writing unverified snapshot file: %s", err))
 		return 1
 	}
